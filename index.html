@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f2">
+  <meta name="description" id="pageDescription" content="Aprende conversiones con AulaConvert, paso a paso.">
+  <title id="pageTitle">AulaConvert — convierte y aprende</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="i18n.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="AulaConvert, inicio"><span class="brand-mark">a</span><span>Aula<span class="brand-accent">Convert</span></span></a>
+    <div class="top-actions"><div class="language-switch" role="group" aria-label="Choose language"><button type="button" class="language-button" id="lang-es" aria-pressed="false" title="Español"><span aria-hidden="true">🇪🇸</span><span>Español</span></button><button type="button" class="language-button" id="lang-en" aria-pressed="true" title="English"><span aria-hidden="true">🇬🇧</span><span>English</span></button></div><a class="top-link" href="#como-funciona" id="topHow">Cómo funciona <span aria-hidden="true">↗</span></a></div>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span><span id="heroEyebrow">MATEMÁTICAS, CON SENTIDO</span></div>
+        <h1 id="heroTitle">Convierte unidades.<br><em>Entiende cada paso.</em></h1>
+        <p class="hero-text" id="heroText">AulaConvert es una web creada para ayudar a estudiantes a entender y practicar conversiones paso a paso. Elige una medida y descubre cómo transformarla.</p>
+        <a class="scroll-link" href="#convertidor" id="startLink">Empezar a convertir <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="float-card card-top"><span class="mini-label" id="distanceLabel">DISTANCIA</span><strong>1 km <b>→</b> 1.000 m</strong></div>
+        <div class="illustration"><div class="illustration-inner"><span>km</span><span class="arrow">↘</span><span>m</span></div><div class="illustration-caption" id="illustrationCaption">Cada unidad tiene su lugar</div></div>
+        <div class="float-card card-bottom"><span class="sparkle">∑</span><span id="learnCallout">Aprender<br><strong>paso a paso</strong></span></div>
+      </div>
+      <div class="hero-bottom"><span id="heroStep1">01 — EXPLORA</span><span id="heroStep2">02 — CONVIERTE</span><span id="heroStep3">03 — COMPRENDE</span></div>
+    </section>
+
+    <section class="converter-section" id="convertidor">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="eyebrow-dot"></span><span id="sectionEyebrow">TU ESPACIO DE PRÁCTICA</span></div><h2 id="sectionTitle">¿Qué quieres convertir?</h2></div>
+        <p id="sectionIntro">Elige un tema y dos unidades.<br class="desktop-only"> Te mostramos el procedimiento.</p>
+      </div>
+      <div class="category-hub" aria-label="Busca una conversión por categoría" id="categoryHub">
+        <section class="hub-group"><div class="hub-heading"><span class="hub-icon" aria-hidden="true">◷</span><h3>Vida diaria</h3></div><p class="hub-description">Convierte medidas habituales de cada día.</p><div class="hub-options">
+          <button type="button" class="hub-option" data-category="superficie">Superficie</button><button type="button" class="hub-option" data-category="volumen">Volumen</button><button type="button" class="hub-option" data-category="tiempo">Tiempo</button><button type="button" class="hub-option" data-category="velocidad">Velocidad</button><button type="button" class="hub-option" data-category="temperatura">Temperatura</button><button type="button" class="hub-option" data-category="digital">Almacenamiento digital</button>
+        </div></section>
+        <section class="hub-group"><div class="hub-heading"><span class="hub-icon" aria-hidden="true">↔</span><h3>Medidas básicas</h3></div><p class="hub-description">Practica las unidades métricas fundamentales.</p><div class="hub-options">
+          <button type="button" class="hub-option active" aria-pressed="true" data-category="longitud">Longitud</button><button type="button" class="hub-option" aria-pressed="false" data-category="masa">Masa</button><button type="button" class="hub-option" data-category="capacidad">Capacidad</button>
+        </div></section>
+        <section class="hub-group"><div class="hub-heading"><span class="hub-icon" aria-hidden="true">∑</span><h3>Matemáticas</h3></div><p class="hub-description">Relaciona números, proporciones y ángulos.</p><div class="hub-options">
+          <button type="button" class="hub-option" data-category="fracciones">Fracciones, decimales y porcentajes</button><button type="button" class="hub-option" data-category="razones">Razones y proporciones</button><button type="button" class="hub-option" data-category="romanos">Números romanos</button><button type="button" class="hub-option" data-category="angulos">Grados y radianes</button>
+        </div></section>
+        <section class="hub-group"><div class="hub-heading"><span class="hub-icon" aria-hidden="true">⚙</span><h3>Física</h3></div><p class="hub-description">Explora magnitudes y fenómenos físicos.</p><div class="hub-options">
+          <button type="button" class="hub-option" data-category="aceleracion">Aceleración</button><button type="button" class="hub-option" data-category="fuerza">Fuerza</button><button type="button" class="hub-option" data-category="presion">Presión</button><button type="button" class="hub-option" data-category="energia">Trabajo y energía</button><button type="button" class="hub-option" data-category="potencia">Potencia</button><button type="button" class="hub-option" data-category="frecuencia">Frecuencia</button><button type="button" class="hub-option" data-category="corriente">Corriente eléctrica</button><button type="button" class="hub-option" data-category="voltaje">Voltaje</button><button type="button" class="hub-option" data-category="resistencia">Resistencia eléctrica</button>
+        </div></section>
+        <section class="hub-group"><div class="hub-heading"><span class="hub-icon" aria-hidden="true">⚗</span><h3>Química</h3></div><p class="hub-description">Trabaja con cantidad de sustancia y concentración.</p><div class="hub-options">
+          <button type="button" class="hub-option" data-category="moles">Moles</button><button type="button" class="hub-option" data-category="masa_molar">Masa molar</button><button type="button" class="hub-option" data-category="densidad">Densidad</button><button type="button" class="hub-option" data-category="concentracion">Concentración</button>
+        </div></section>
+        <section class="hub-group"><div class="hub-heading"><span class="hub-icon" aria-hidden="true">01</span><h3>Sistemas numéricos</h3></div><p class="hub-description">Escribe y convierte números en distintas bases.</p><div class="hub-options">
+          <button type="button" class="hub-option" data-category="binario">Binario</button><button type="button" class="hub-option" data-category="decimal">Decimal</button><button type="button" class="hub-option" data-category="octal">Octal</button><button type="button" class="hub-option" data-category="hexadecimal">Hexadecimal</button>
+        </div></section>
+      </div>
+      <div class="converter-layout" id="zona-conversion">
+        <div class="input-panel">
+          <div class="input-category"><span class="field-label" id="selectedLabel">Conversión elegida</span><strong id="currentCategory">Longitud</strong><p id="categoryDescription"></p></div>
+          <label class="field-label" for="amount" id="amountLabel">Dato inicial</label>
+          <div class="amount-wrap"><input id="amount" type="text" value="2.5" inputmode="decimal" aria-label="Dato inicial"><span id="amountUnit" class="amount-unit">km</span></div>
+          <div class="unit-row">
+            <div class="unit-field"><label class="field-label" for="fromUnit" id="fromLabel">De</label><select id="fromUnit" aria-label="Unidad de origen"></select></div>
+            <button class="swap-button" id="swapButton" type="button" aria-label="Intercambiar unidades" title="Intercambiar unidades">⇄</button>
+            <div class="unit-field"><label class="field-label" for="toUnit" id="toLabel">A</label><select id="toUnit" aria-label="Unidad de destino"></select></div>
+          </div>
+          <p class="input-hint" id="inputHint">Usa punto (.) para los decimales; por ejemplo, 2.5.</p>
+          <button type="button" class="example-button" id="exampleButton">Cargar un ejemplo</button>
+        </div>
+
+        <section class="result-panel" aria-live="polite" aria-label="Procedimiento de conversión">
+          <div class="result-heading"><span class="eyebrow" id="procedureLabel">PROCEDIMIENTO</span><span class="result-stamp" id="stampCategory">LONGITUD</span></div>
+          <div class="initial-block"><span class="field-label" id="initialDataLabel">Dato inicial</span><p class="result-equation" id="equation">2,5 km</p></div>
+          <p class="result-rule" id="ruleText">Sigue estos pasos para convertir la medida.</p>
+          <div class="steps" id="steps"></div>
+          <div class="final-block"><span class="field-label" id="resultLabel">Resultado</span><p class="result-number" id="result">2500 m</p><p class="rounding-note" id="roundingNote"></p></div>
+        </section>
+      </div>
+      <p class="variable-note"><strong id="noteLabel">Nota:</strong> <span id="variableNoteText">convertir volumen a masa depende de la sustancia (por ejemplo, del ingrediente y su densidad). No hacemos esa conversión sin ese dato.</span></p>
+    </section>
+
+    <section class="guide" id="como-funciona">
+      <div class="guide-heading"><div class="eyebrow"><span class="eyebrow-dot"></span><span id="guideEyebrow">CÓMO USAR AULACONVERT</span></div><h2 id="guideTitle">Un paso cada vez.</h2><ol class="how-list" id="howList"><li>Elige una conversión en el menú de categorías.</li><li>Introduce el dato inicial y selecciona la unidad de origen y la de destino.</li><li>Lee primero el dato inicial; después sigue los pasos y consulta el resultado al final.</li></ol><div class="how-example" id="howExample"><strong>Ejemplo:</strong> 2.5 km → m. Como 1 km = 1000 m, calculamos 2.5 × 1000 = 2500 m.</div><p class="decimal-guide" id="decimalGuide">Escribe los decimales con punto: <strong>2.5</strong>. Si el resultado es periódico o muy largo, se muestran hasta 8 cifras tras el punto y se indica que está redondeado.</p><a class="back-top" href="#inicio" id="backTop">Volver arriba ↑</a></div>
+      <div class="guide-footnote"><span>✳</span> <span id="guideFootnote">Las conversiones se calculan en tu navegador. No se consultan monedas ni otros datos que cambian con el tiempo.</span></div>
+    </section>
+    <section class="about-project" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre el proyecto</h2>
+      <p id="aboutText">AulaConvert nació con la idea de ayudar a otros estudiantes a comprender las conversiones y aprender a resolverlas paso a paso.</p>
+    </section>
+    <footer><a class="brand footer-brand" href="#inicio"><span class="brand-mark">a</span><span>Aula<span class="brand-accent">Convert</span></span></a><span id="footerText">Hecho para aprender, paso a paso.</span><a href="#inicio" id="footerTop">Volver arriba ↑</a></footer>
+  </main>
+</body>
+</html>
